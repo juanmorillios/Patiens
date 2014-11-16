@@ -13,6 +13,12 @@
 		B96806921A192F2000D6CB08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96806911A192F2000D6CB08 /* Images.xcassets */; };
 		B96806951A192F2000D6CB08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96806931A192F2000D6CB08 /* LaunchScreen.xib */; };
 		B96806A11A192F2100D6CB08 /* PatiensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96806A01A192F2100D6CB08 /* PatiensTests.m */; };
+		B96806AB1A192F7900D6CB08 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96806AA1A192F7900D6CB08 /* MainStoryboard.storyboard */; };
+		B96806B21A193FBC00D6CB08 /* PatiensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96806B11A193FBC00D6CB08 /* PatiensTableViewController.m */; };
+		B96806B61A19402100D6CB08 /* PrescriptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96806B51A19402100D6CB08 /* PrescriptionsTableViewController.m */; };
+		B96806B91A19405D00D6CB08 /* AddPatiensViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96806B81A19405D00D6CB08 /* AddPatiensViewController.m */; };
+		B96806BC1A19407400D6CB08 /* AddPrescriptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96806BB1A19407400D6CB08 /* AddPrescriptionsViewController.m */; };
+		B96806BF1A19432600D6CB08 /* CoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96806BE1A19432600D6CB08 /* CoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,17 @@
 		B968069A1A192F2100D6CB08 /* PatiensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatiensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B968069F1A192F2100D6CB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B96806A01A192F2100D6CB08 /* PatiensTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatiensTests.m; sourceTree = "<group>"; };
+		B96806AA1A192F7900D6CB08 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B96806B01A193FBC00D6CB08 /* PatiensTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatiensTableViewController.h; sourceTree = "<group>"; };
+		B96806B11A193FBC00D6CB08 /* PatiensTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatiensTableViewController.m; sourceTree = "<group>"; };
+		B96806B41A19402100D6CB08 /* PrescriptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrescriptionsTableViewController.h; sourceTree = "<group>"; };
+		B96806B51A19402100D6CB08 /* PrescriptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrescriptionsTableViewController.m; sourceTree = "<group>"; };
+		B96806B71A19405D00D6CB08 /* AddPatiensViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPatiensViewController.h; sourceTree = "<group>"; };
+		B96806B81A19405D00D6CB08 /* AddPatiensViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPatiensViewController.m; sourceTree = "<group>"; };
+		B96806BA1A19407400D6CB08 /* AddPrescriptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPrescriptionsViewController.h; sourceTree = "<group>"; };
+		B96806BB1A19407400D6CB08 /* AddPrescriptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPrescriptionsViewController.m; sourceTree = "<group>"; };
+		B96806BD1A19432600D6CB08 /* CoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreViewController.h; sourceTree = "<group>"; };
+		B96806BE1A19432600D6CB08 /* CoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +95,8 @@
 		B96806861A192F2000D6CB08 /* Patiens */ = {
 			isa = PBXGroup;
 			children = (
+				B96806B31A193FC700D6CB08 /* Controller */,
+				B96806AA1A192F7900D6CB08 /* MainStoryboard.storyboard */,
 				B968068B1A192F2000D6CB08 /* AppDelegate.h */,
 				B968068C1A192F2000D6CB08 /* AppDelegate.m */,
 				B96806911A192F2000D6CB08 /* Images.xcassets */,
@@ -112,6 +131,24 @@
 				B968069F1A192F2100D6CB08 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B96806B31A193FC700D6CB08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B96806B01A193FBC00D6CB08 /* PatiensTableViewController.h */,
+				B96806B11A193FBC00D6CB08 /* PatiensTableViewController.m */,
+				B96806B41A19402100D6CB08 /* PrescriptionsTableViewController.h */,
+				B96806B51A19402100D6CB08 /* PrescriptionsTableViewController.m */,
+				B96806B71A19405D00D6CB08 /* AddPatiensViewController.h */,
+				B96806B81A19405D00D6CB08 /* AddPatiensViewController.m */,
+				B96806BA1A19407400D6CB08 /* AddPrescriptionsViewController.h */,
+				B96806BB1A19407400D6CB08 /* AddPrescriptionsViewController.m */,
+				B96806BD1A19432600D6CB08 /* CoreViewController.h */,
+				B96806BE1A19432600D6CB08 /* CoreViewController.m */,
+			);
+			name = Controller;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96806AB1A192F7900D6CB08 /* MainStoryboard.storyboard in Resources */,
 				B96806951A192F2000D6CB08 /* LaunchScreen.xib in Resources */,
 				B96806921A192F2000D6CB08 /* Images.xcassets in Resources */,
 			);
@@ -214,8 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B968068D1A192F2000D6CB08 /* AppDelegate.m in Sources */,
+				B96806B91A19405D00D6CB08 /* AddPatiensViewController.m in Sources */,
+				B96806B61A19402100D6CB08 /* PrescriptionsTableViewController.m in Sources */,
 				B968068A1A192F2000D6CB08 /* main.m in Sources */,
+				B96806BC1A19407400D6CB08 /* AddPrescriptionsViewController.m in Sources */,
+				B96806B21A193FBC00D6CB08 /* PatiensTableViewController.m in Sources */,
 				B96806901A192F2000D6CB08 /* Patiens.xcdatamodeld in Sources */,
+				B96806BF1A19432600D6CB08 /* CoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
